@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="fonts/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+      <div class="container mt-5 py-5 px-5 d-none" id="logDiv">
+        <h1 class="text-center">Smart Login System</h1>
+        <input id="userEmailCheck" type="email" placeholder="Enter your email" class="form-control my-3 bg-transparent">
+        <input id="userPassCheck" type="password" placeholder="Enter your password" class="form-control bg-transparent">
+        <p class="failLog text-center pt-4 d-none">Uncorrect email or password</p>
+        <button class="Login btn btn-outline-info w-100 my-3">Login</button>
+        <p class="text-center text-white">Don’t have an account? 
+            <span class="text-white">Sign Up</span>
+        </p>
+
+      </div>
+      <div class="container mt-5 py-5 px-5" id="signDiv">
+        <h1 class="text-center">Smart Login System</h1>
+        <input type="text" placeholder="Enter your name" class="form-control my-3 bg-transparent" id="userName">
+        <input type="email" placeholder="Enter your email" class="form-control my-3 bg-transparent" id="userEmail">
+        <input type="password" placeholder="Enter your password" class="form-control bg-transparent" id="userPassword">
+        <p class="successP text-center pt-4 d-none">Success</p>
+        <p class="dangerP text-center pt-4 d-none">email already exists</p>
+        <button class="signUp btn btn-outline-info w-100 my-3">Sign Up</button>
+        <p class="text-center text-white">You have an account?
+            <span class="text-white">Signin</span>
+        </p>
+
+      </div>
+      <nav class="navbar navbar-expand-lg px-5 d-none">
+        <a class="navbar-brand text-white" href="#">SMART LOGIN</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    <button class="btn btn-outline-warning text-white">Log out</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="home container my-5 text-center d-flex align-items-center d-none">
+        <div class="group m-auto w-75 p-5">
+            <h1 class="text-capitalize" id="userHome"></h1>
+        </div>
+    </div>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="fonts/js/all.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
