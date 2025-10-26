@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="./images/icon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+  <body>
+    <section id="login-sec" class="d-none login-sec">
+      <div class="container">
+        <div class="login-card w-75 m-auto p-5 mt-5">
+          <header>
+            <h2 class="text-center fw-medium">Smart Login System</h2>
+          </header>
+          <form>
+  <div class="my-3">
+    <input type="email" class="form-control" id="emailInputLogin" aria-describedby="emailHelp" placeholder="Enter your email">
+  </div>
+  <div class="mb-3">
+    <input type="password" class="form-control" id="passInputLogin" placeholder="Enter your password">
+  </div>
+  <p id="login-msg" class="text-center msg">
+    
+  </p>
+  <button id="btn-login" type="submit" class="btn w-100 my-3">Login</button>
+  <p class="text-center text-white">Don’t have an account? <a id="to-sign" href="">Sign Up</a> </p>
+</form>
+        </div>
+      </div>
+    </section>
+    <section id="Signup-sec" class=" login-sec">
+      <div class="container">
+        <div class="login-card w-75 m-auto p-5 mt-5">
+          <header>
+            <h2 class="text-center fw-medium">Smart Login System</h2>
+          </header>
+          <form>
+  <div class="my-3">
+    <input type="text" class="form-control" id="nameInput" aria-describedby="emailHelp" placeholder="Enter your name">
+  </div>
+  <div class="mb-3">
+    <input type="email" class="form-control emailInput" id="emailInput" aria-describedby="emailHelp" placeholder="Enter your email">
+  </div>
+  <div class="mb-3">
+    <input type="password" class="form-control" id="passInput" placeholder="Enter your password">
+  </div>
+  <p id="sign-msg" class="text-center">
+    
+  </p>
+  <button id="btn-signup" type="button" class="btn w-100 my-3">Sign Up</button>
+  <p class="text-center text-white">You have an account? <a id="to-login" href="">Signin</a> </p>
+</form>
+        </div>
+      </div>
+    </section>
+    
+<section id="home-sec" class="d-none home-sec">
+  <nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand text-white" href="#">SMART LOGIN</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto my-2 my-lg-0">
+        <li id="logout" class="nav-item">
+          <a class="nav-link btn btn-outline-warning" href="">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+      <div class="container d-flex align-items-center h-100">
+        <div class="home-card w-75 m-auto p-5">
+          <h1 id="heading" class="text-center fw-medium">Welcome </h1>
+        </div>
+      </div>
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
